@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Myntra bag </title>
+          <style>     
+            .click{
+            background-color: rgb(166, 219, 219);
+            border-radius: 20px;
+            border: none;
+            width :150px;
+            height : 40px
+        } 
+        #click1{
+            border-color: black;
+            width : 200px;
+            height : 40px;
+            border-radius: 30px;
+
+        }
+        </style>
+
+</head>
+<body>
+
+    <button class = "click" onclick="cartquantity = cartquantity + 1 ; document.querySelector('#cartsummary').innerText = 'YOUR BAG HAS '+ cartquantity +' ITEMS'"> Add to Bag</button>
+    <button id = "click1" onclick="cartquantity = cartquantity - 1 ; document.querySelector('#cartsummary').innerText = 'YOUR BAG HAS '+ cartquantity +' ITEMS'"> Move To Wishlist</button>
+    <button class = "click"  onclick = "cartquantity = cartquantity + 2 ; document.querySelector('#cartsummary').innerText = 'YOUR BAG HAS '+ cartquantity +' ITEMS'"> Add 1+1 Sale Items</button>
+    <h1 id = "cartsummary">YOUR BAG HAS 0 ITEMS</h1>
+    <script>
+        let cartquantity = 0
+        document.querySelector('#cartsummary').innerText = 'YOUR BAG HAS '+ cartquantity +' ITEMS'
+    </script>
+    
+</body>
+</html>
